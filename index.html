@@ -185,15 +185,22 @@
           <div class="col-12 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-blue">
               <h5><a href="https://doi.org/10.1145/3528233.3530712" target="_blank">CCP: Configurable Crowd Profiles</a></h5>
-              <p>Andreas Panayiotou, Theodoros Kyriakou, Marilena Lemonari, Yiorgos Chrysanthou, and Panayiotis Charalambous</p>
+              <p style="text-align: justify;">Andreas Panayiotou, Theodoros Kyriakou, Marilena Lemonari, Yiorgos Chrysanthou, and Panayiotis Charalambous</p>
               <p>In Special Interest Group on Computer Graphics and Interactive Techniques Conference Proceedings (SIGGRAPH ’22 Conference Proceedings), August 7–11, 2022, Vancouver, BC, Canada. ACM, New York, NY, USA</p>
-              <div>
-                <img src="assets/img/ccp.jpg" class="img-fluid" alt="">
-                <a href="https://doi.org/10.1145/3528233.3530712" class="linkedin" target="_blank"><i class="bx bx-file" style="font-size: 30px;"></i></a>
-                <a href="https://www.youtube.com/watch?v=k5SAOnisBas" class="linkedin" target="_blank"><i class="bx bx-camera-movie" style="font-size: 30px;"></i></a>
-                <a href="https://github.com/veupnea/CCP" class="linkedin" target="_blank"><i class="bx bx-code-alt" style="font-size: 30px;"></i></a>
+              <div class="pub-icons">
+                <a href="https://doi.org/10.1145/3528233.3530712" target="_blank"><i class="bx bx-file" style="font-size: 30px;"></i></a>
+                <a href="https://www.youtube.com/watch?v=k5SAOnisBas" target="_blank"><i class="bx bx-camera-movie" style="font-size: 30px;"></i></a>
+                <a href="https://github.com/veupnea/CCP" target="_blank"><i class="bx bx-code-alt" style="font-size: 30px;"></i></a>
               </div>
-              <p style="text-align: justify;">Diversity among agents' behaviors and heterogeneity in virtual crowds in general, is an important aspect of crowd simulation as it is crucial to the perceived realism and plausibility of the resulting simulations. Heterogeneous crowds constitute the pillar in creating numerous real-life scenarios such as museum exhibitions, which require variety in agent behaviors, from basic collision avoidance to more complex interactions both among agents and with environmental features. Most of the existing systems optimize for specific behaviors such as goal seeking, and neglect to take into account other behaviors and how these interact together to form diverse agent profiles. In this paper, we present a RL-based framework for learning multiple agent behaviors concurrently. We optimize the agent by varying the importance of the selected behaviors (goal seeking, collision avoidance, interaction with environment, and grouping) while training; essentially we have a reward function that changes dynamically during training. The importance of each separate sub-behavior is added as input to the policy, resulting in the development of a single model capable of capturing as well as enabling dynamic run-time manipulation of agent profiles; thus allowing configurable profiles. Through a series of experiments, we verify that our system provides users with the ability to design virtual scenes; control and mix agent behaviors thus creating personality profiles, and assign different profiles to groups of agents. Moreover, we demonstrate that interestingly the proposed model generalizes to situations not seen in the training data such as a) crowds with higher density, b) behavior weights that are outside the training intervals and c) to scenes with more intricate environment layouts.</p>
+              <img src="assets/img/ccp.jpg" class="img-fluid" alt="">
+              <div class="text-container">
+                <div class="content hideContent">
+                  Diversity among agents' behaviors and heterogeneity in virtual crowds in general, is an important aspect of crowd simulation as it is crucial to the perceived realism and plausibility of the resulting simulations. Heterogeneous crowds constitute the pillar in creating numerous real-life scenarios such as museum exhibitions, which require variety in agent behaviors, from basic collision avoidance to more complex interactions both among agents and with environmental features. Most of the existing systems optimize for specific behaviors such as goal seeking, and neglect to take into account other behaviors and how these interact together to form diverse agent profiles. In this paper, we present a RL-based framework for learning multiple agent behaviors concurrently. We optimize the agent by varying the importance of the selected behaviors (goal seeking, collision avoidance, interaction with environment, and grouping) while training; essentially we have a reward function that changes dynamically during training. The importance of each separate sub-behavior is added as input to the policy, resulting in the development of a single model capable of capturing as well as enabling dynamic run-time manipulation of agent profiles; thus allowing configurable profiles. Through a series of experiments, we verify that our system provides users with the ability to design virtual scenes; control and mix agent behaviors thus creating personality profiles, and assign different profiles to groups of agents. Moreover, we demonstrate that interestingly the proposed model generalizes to situations not seen in the training data such as a) crowds with higher density, b) behavior weights that are outside the training intervals and c) to scenes with more intricate environment layouts.
+                </div>
+                <div class="show-more">
+                    <a href="#" onclick="return false;">Show More</a>
+                </div>
+            </div>
             </div>
           </div>
         </div>
@@ -267,6 +274,8 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery-3.6.0.min.js"></script>
+  <script src="assets/vendor/jquery/jquery-ui.min.js"></script>
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
