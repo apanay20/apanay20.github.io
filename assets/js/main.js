@@ -11,10 +11,10 @@ $(".show-more a").on("click", function() {
   var linkText = $this.text().toUpperCase();    
   
   if(linkText === "SHOW MORE"){
-      linkText = "Show less";
+      linkText = "Show Less";
       $content.switchClass("hideContent", "showContent", 400);
   } else {
-      linkText = "Show more";
+      linkText = "Show More";
       $content.switchClass("showContent", "hideContent", 400);
   };
 
