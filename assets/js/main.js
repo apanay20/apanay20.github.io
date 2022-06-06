@@ -14,7 +14,6 @@ const darkToggle = document.querySelector("#darkToggleBtn");
 // Select the stylesheet <link>
 const theme = document.querySelector("#theme-link");
 
-var darkToggleText = document.getElementById("darkToggleText");
 var darkToggleIcon = darkToggle.children.item(0);
 var cyensLogos = document.getElementsByClassName('cyensLogo');
 
@@ -25,7 +24,6 @@ darkToggle.addEventListener("click", function(e) {
     theme.href = "./assets/css/dark-style.css";
     darkToggleIcon.classList.remove('bx-moon');
     darkToggleIcon.classList.add('bx-sun');
-    darkToggleText.innerText = "Light Mode";
     for (var i = 0; i < cyensLogos.length; i++) {
       var item = cyensLogos[i];  
       item.src = "assets/img/cyensWhite.png";
@@ -34,7 +32,6 @@ darkToggle.addEventListener("click", function(e) {
     theme.href = "./assets/css/light-style.css";
     darkToggleIcon.classList.remove('bx-sun');
     darkToggleIcon.classList.add('bx-moon');
-    darkToggleText.innerText = "Dark Mode";
     for (var i = 0; i < cyensLogos.length; i++) {
       var item = cyensLogos[i];  
       item.src = "assets/img/cyens.png";
