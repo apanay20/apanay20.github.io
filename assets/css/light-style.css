@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
   position: fixed;
   bottom: 15px;
   right: 15px;
-  z-index: 99600;
+  z-index: 998;
   background: #1b1b1b;
   width: 40px;
   height: 40px;
