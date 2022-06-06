@@ -5,6 +5,45 @@
 * License: https://bootstrapmade.com/license/
 */
 
+/**
+  * Mine ----------------------------------------------
+*/
+
+// Select the button
+const darkToggle = document.querySelector("#darkToggleBtn");
+// Select the stylesheet <link>
+const theme = document.querySelector("#theme-link");
+
+var darkToggleText = document.getElementById("darkToggleText");
+var darkToggleIcon = darkToggle.children.item(0);
+var cyensLogos = document.getElementsByClassName('cyensLogo');
+
+// Listen for a click on the button
+darkToggle.addEventListener("click", function(e) {
+  e.preventDefault();
+  if (theme.getAttribute("href").includes("light")) {
+    theme.href = "./assets/css/dark-style.css";
+    darkToggleIcon.classList.remove('bx-moon');
+    darkToggleIcon.classList.add('bx-sun');
+    darkToggleText.innerText = "Light Mode";
+    for (var i = 0; i < cyensLogos.length; i++) {
+      var item = cyensLogos[i];  
+      item.src = "assets/img/cyensWhite.png";
+    }
+  } else {
+    theme.href = "./assets/css/light-style.css";
+    darkToggleIcon.classList.remove('bx-sun');
+    darkToggleIcon.classList.add('bx-moon');
+    darkToggleText.innerText = "Dark Mode";
+    for (var i = 0; i < cyensLogos.length; i++) {
+      var item = cyensLogos[i];  
+      item.src = "assets/img/cyens.png";
+    }
+  }
+  return false;
+});
+
+
 $(".show-more a").on("click", function() {
   var $this = $(this); 
   var $content = $this.parent().prev("div.content");
@@ -20,6 +59,7 @@ $(".show-more a").on("click", function() {
 
   $this.text(linkText);
 });
+
 
 // Image enalarge modal
 //-----------------------
@@ -41,6 +81,10 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
 };
+
+/**
+  * End Mine ----------------------------------------------
+*/
 
 (function() {
   "use strict";
