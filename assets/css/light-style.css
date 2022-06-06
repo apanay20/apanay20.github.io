@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6 {
   bottom: 15px;
   right: 15px;
   z-index: 99600;
-  background: #000000;
+  background: #1b1b1b;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -47,8 +47,10 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 0;
 }
 
-.dark-toggle:hover {
-  background: #00615c !important;
+@media screen and (min-width: 800px) {
+  .dark-toggle:hover {
+    background: #00615c !important;
+  }
 }
 
 .pubYearTitle{
