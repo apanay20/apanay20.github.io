@@ -323,7 +323,6 @@ div.text-container {
   width: 100%;
   overflow: hidden;
   transition: 0.3s;
-  font-weight: 550;
 }
 .nav-menu a i, .nav-menu a:focus i {
   font-size: 20px;
