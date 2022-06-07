@@ -17,7 +17,7 @@ const theme = document.querySelector("#theme-link");
 var darkToggleIcon = darkToggle.children.item(0);
 var cyensLogos = document.getElementsByClassName('cyensLogo');
 
-if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){
+if(window.matchMedia && ((window.matchMedia('(prefers-color-scheme: dark)').matches && localStorage.getItem('theme') !== 'light') || localStorage.getItem('theme') === 'dark')){
   theme.href = "./assets/css/dark-style.css";
   darkToggleIcon.classList.remove('bx-moon');
   darkToggleIcon.classList.add('bx-sun');
@@ -39,7 +39,7 @@ if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matche
 // Listen for a click on the button
 darkToggle.addEventListener("click", function(e) {
   e.preventDefault();
-  if (theme.getAttribute("href").includes("light")) {
+  if (theme.getAttribute("href").includes("light")) {  
     theme.href = "./assets/css/dark-style.css";
     darkToggleIcon.classList.remove('bx-moon');
     darkToggleIcon.classList.add('bx-sun');
@@ -47,6 +47,7 @@ darkToggle.addEventListener("click", function(e) {
       var item = cyensLogos[i];  
       item.src = "assets/img/cyensWhite.png";
     }
+    localStorage.setItem('theme', 'dark');
   } else {
     theme.href = "./assets/css/light-style.css";
     darkToggleIcon.classList.remove('bx-sun');
@@ -55,6 +56,7 @@ darkToggle.addEventListener("click", function(e) {
       var item = cyensLogos[i];  
       item.src = "assets/img/cyens.png";
     }
+    localStorage.setItem('theme', 'light');
   }
   return false;
 });
