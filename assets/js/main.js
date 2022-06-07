@@ -17,6 +17,25 @@ const theme = document.querySelector("#theme-link");
 var darkToggleIcon = darkToggle.children.item(0);
 var cyensLogos = document.getElementsByClassName('cyensLogo');
 
+if(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){
+  theme.href = "./assets/css/dark-style.css";
+  darkToggleIcon.classList.remove('bx-moon');
+  darkToggleIcon.classList.add('bx-sun');
+  for (var i = 0; i < cyensLogos.length; i++) {
+    var item = cyensLogos[i];  
+    item.src = "assets/img/cyensWhite.png";
+  }
+}else{
+  theme.href = "./assets/css/light-style.css";
+  darkToggleIcon.classList.remove('bx-sun');
+  darkToggleIcon.classList.add('bx-moon');
+  for (var i = 0; i < cyensLogos.length; i++) {
+    var item = cyensLogos[i];  
+    item.src = "assets/img/cyens.png";
+  }
+}
+
+
 // Listen for a click on the button
 darkToggle.addEventListener("click", function(e) {
   e.preventDefault();
