@@ -12,13 +12,15 @@
 // Select the button
 const darkToggle = document.querySelector("#darkToggleBtn");
 // Select the stylesheet <link>
-const theme = document.querySelector("#theme-link");
+var lightTheme = document.querySelector("#css_light");
+var darkTheme = document.querySelector("#css_dark");
 
 var darkToggleIcon = darkToggle.children.item(0);
 var cyensLogos = document.getElementsByClassName('cyensLogo');
 
 if(window.matchMedia && ((window.matchMedia('(prefers-color-scheme: dark)').matches && localStorage.getItem('theme') !== 'light') || localStorage.getItem('theme') === 'dark')){
-  theme.href = "./assets/css/dark-style.css";
+  darkTheme.disabled = false;
+  lightTheme.disabled = true;
   darkToggleIcon.classList.remove('bx-moon');
   darkToggleIcon.classList.add('bx-sun');
   for (var i = 0; i < cyensLogos.length; i++) {
@@ -26,7 +28,8 @@ if(window.matchMedia && ((window.matchMedia('(prefers-color-scheme: dark)').matc
     item.src = "assets/img/cyensWhite.png";
   }
 }else{
-  theme.href = "./assets/css/light-style.css";
+  darkTheme.disabled = true;
+  lightTheme.disabled = false;
   darkToggleIcon.classList.remove('bx-sun');
   darkToggleIcon.classList.add('bx-moon');
   for (var i = 0; i < cyensLogos.length; i++) {
@@ -39,8 +42,9 @@ if(window.matchMedia && ((window.matchMedia('(prefers-color-scheme: dark)').matc
 // Listen for a click on the button
 darkToggle.addEventListener("click", function(e) {
   e.preventDefault();
-  if (theme.getAttribute("href").includes("light")) {  
-    theme.href = "./assets/css/dark-style.css";
+  if (lightTheme.disabled == false) {
+    darkTheme.disabled = false;
+    lightTheme.disabled = true;  
     darkToggleIcon.classList.remove('bx-moon');
     darkToggleIcon.classList.add('bx-sun');
     for (var i = 0; i < cyensLogos.length; i++) {
@@ -49,7 +53,8 @@ darkToggle.addEventListener("click", function(e) {
     }
     localStorage.setItem('theme', 'dark');
   } else {
-    theme.href = "./assets/css/light-style.css";
+    darkTheme.disabled = true;
+    lightTheme.disabled = false;
     darkToggleIcon.classList.remove('bx-sun');
     darkToggleIcon.classList.add('bx-moon');
     for (var i = 0; i < cyensLogos.length; i++) {
