@@ -245,7 +245,7 @@ span.onclick = function() {
       loop: true,
       typeSpeed: 100,
       backSpeed: 50,
-      backDelay: 2000
+      backDelay: 1500
     });
   }
 
@@ -352,7 +352,7 @@ span.onclick = function() {
    */
   window.addEventListener('load', () => {
     AOS.init({
-      duration: 1000,
+      duration: 600,
       easing: 'ease-in-out',
       once: true,
       mirror: false
