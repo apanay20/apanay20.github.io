@@ -32,6 +32,16 @@ iframe{
   box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 5%) !important;
 }
 
+#cvDownload{
+  width: 240px;
+  text-align: center;
+  background: #282828;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  padding: 10px 15px;
+}
+
 /*--------------------------------------------------------------
 # Mine
 --------------------------------------------------------------*/
@@ -397,6 +407,7 @@ div.text-container {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
+  padding: 40px 0px;
   background: #1a1a1a;
   background-size: cover;
   position: relative;
@@ -464,7 +475,7 @@ div.text-container {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 40px 0;
+  padding: 25px 0;
   overflow: hidden;
 }
 
@@ -474,8 +485,7 @@ section {
 }
 .section-title h2 {
   font-size: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
+  font-weight: 500;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
@@ -516,6 +526,9 @@ section {
 .about .content ul {
   list-style: none;
   padding: 0;
+}
+.about .content ul span{
+  font-weight: 400;
 }
 .about .content ul li {
   margin-bottom: 10px;
@@ -611,7 +624,7 @@ section {
 --------------------------------------------------------------*/
 .resume .resume-title {
   font-size: 26px;
-  font-weight: 700;
+  font-weight: 500;
   margin-top: 20px;
   margin-bottom: 20px;
   color: #c4c4c4;
@@ -625,7 +638,7 @@ section {
 .resume .resume-item h4 {
   line-height: 18px;
   font-size: 19px;
-  font-weight: 600;
+  font-weight: 500;
   font-family: "Poppins", sans-serif;
   color: #00615c;
   margin-bottom: 10px;
@@ -635,7 +648,7 @@ section {
   background: #282828;
   padding: 5px 15px;
   display: inline-block;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 .resume .resume-item ul {
@@ -896,8 +909,8 @@ section {
   transition: ease-in-out 0.3s;
 }
 .services .icon-box p {
-  line-height: 17px;
-  font-size: 14px;
+  line-height: 18px;
+  font-size: 15px;
   margin-bottom: 0;
 }
 .services .icon-box:hover {

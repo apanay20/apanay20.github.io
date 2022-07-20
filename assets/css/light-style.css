@@ -26,6 +26,15 @@ a:hover {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
+#cvDownload{
+  width: 240px;
+  text-align: center;
+  background: #f7f8f9;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  padding: 10px 15px;
+}
 /*--------------------------------------------------------------
 # Mine
 --------------------------------------------------------------*/
@@ -392,9 +401,7 @@ div.text-container {
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  /*width: 100%;
-  #height: 100vh;
-  background: url("../img/hero-bg.jpg") top right no-repeat;*/
+  padding: 40px 0px;
   background: #f7f8f9;
   background-size: cover;
   position: relative;
@@ -462,7 +469,7 @@ div.text-container {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  padding: 40px 0;
+  padding: 25px 0;
   overflow: hidden;
 }
 
@@ -472,8 +479,7 @@ section {
 }
 .section-title h2 {
   font-size: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
+  font-weight: 500;
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
@@ -514,6 +520,9 @@ section {
 .about .content ul {
   list-style: none;
   padding: 0;
+}
+.about .content ul span{
+  font-weight: 400;
 }
 .about .content ul li {
   margin-bottom: 10px;
@@ -609,7 +618,7 @@ section {
 --------------------------------------------------------------*/
 .resume .resume-title {
   font-size: 26px;
-  font-weight: 700;
+  font-weight: 500;
   margin-top: 20px;
   margin-bottom: 20px;
   color: #45505b;
@@ -623,7 +632,7 @@ section {
 .resume .resume-item h4 {
   line-height: 18px;
   font-size: 19px;
-  font-weight: 600;
+  font-weight: 500;
   font-family: "Poppins", sans-serif;
   color: #00615c;
   margin-bottom: 10px;
@@ -633,7 +642,7 @@ section {
   background: #f7f8f9;
   padding: 5px 15px;
   display: inline-block;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 10px;
 }
 .resume .resume-item ul {
@@ -894,8 +903,8 @@ section {
   transition: ease-in-out 0.3s;
 }
 .services .icon-box p {
-  line-height: 17px;
-  font-size: 14px;
+  line-height: 18px;
+  font-size: 15px;
   margin-bottom: 0;
 }
 .services .icon-box:hover {
