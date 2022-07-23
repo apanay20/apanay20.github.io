@@ -6,7 +6,7 @@
 */
 
 /**
-  * Mine ----------------------------------------------
+  * Dark Mode ----------------------------------------------
 */
 
 // Select the button
@@ -38,6 +38,20 @@ if(window.matchMedia && ((window.matchMedia('(prefers-color-scheme: dark)').matc
   }
 }
 
+/**
+  * Resume Item Showo More ----------------------------------------------
+*/
+function resumeShow(element){
+  const parentDiv = element.parentNode;
+  parentDiv.classList.add("show");
+  element.style.display = "none";
+}
+
+function resumeHide(element){
+  const parentDiv = element.parentNode;
+  parentDiv.childNodes[1].style.display = "block";
+  parentDiv.classList.remove("show");
+}
 
 // Listen for a click on the button
 darkToggle.addEventListener("click", function(e) {
