@@ -92,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .pubYearTitle{
   text-align: center;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 25px;
   margin-bottom: 10px;
   color: #45505b;
@@ -110,7 +110,8 @@ h1, h2, h3, h4, h5, h6 {
 div.text-container {
   text-align: justify;
   margin: 0 auto;
-  width: 100%;    
+  width: 100%;
+  overflow: hidden;    
 }
 
 .hideContent {

@@ -99,7 +99,7 @@ iframe{
 
 .pubYearTitle{
   text-align: center;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 25px;
   margin-bottom: 10px;
   color: #cfcfcf;
@@ -117,7 +117,8 @@ iframe{
 div.text-container {
   text-align: justify;
   margin: 0 auto;
-  width: 100%;    
+  width: 100%;
+  overflow: hidden;    
 }
 
 .hideContent {
