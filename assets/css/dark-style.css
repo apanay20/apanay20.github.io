@@ -86,7 +86,7 @@ iframe{
   background: #ffffff;
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 10px;
   transition: all 0.4s;
 }
 
@@ -242,7 +242,7 @@ div.text-container {
   background: #00615c;
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 10px;
   transition: all 0.4s;
 }
 .back-to-top i {
@@ -367,7 +367,7 @@ div.text-container {
   margin-bottom: 8px;
   transition: 0.3s;
   font-size: 17px;
-  border-radius: 50px;
+  border-radius: 20px;
   background: #bdbdbd;
   height: 56px;
   width: 100%;
@@ -700,7 +700,7 @@ section {
   position: absolute;
   width: 16px;
   height: 16px;
-  border-radius: 50px;
+  border-radius: 5px;
   left: -9px;
   top: 0;
   background: #fff;
@@ -1092,7 +1092,7 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50px;
+  border-radius: 10px;
   transition: all 0.3s ease-in-out;
 }
 .contact .info h4 {
@@ -1235,7 +1235,7 @@ section {
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
-  border-radius: 50%;
+  border-radius: 20%;
   text-align: center;
   width: 36px;
   height: 36px;
