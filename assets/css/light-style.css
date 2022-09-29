@@ -34,11 +34,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: auto;
   font-size: 18px;
   padding: 10px 15px;
+  border-radius: 10px;
 }
 
 #profileImage{
   border-radius: 20px;
-  box-shadow: 0px 0px 10px 0px #00000066;
+  box-shadow: 0px 0px 10px 0px #00000047;
 }
 /*--------------------------------------------------------------
 # Mine
@@ -679,6 +680,7 @@ section {
   display: inline-block;
   font-weight: 500;
   margin-bottom: 10px;
+  border-radius: 5px;
 }
 .resume .resume-item ul {
   padding-left: 20px;
