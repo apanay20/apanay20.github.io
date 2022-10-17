@@ -51,6 +51,22 @@ iframe{
 /*--------------------------------------------------------------
 # Mine
 --------------------------------------------------------------*/
+details[open] summary ~ * {
+  animation: sweep .75s ease-in-out;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; transform: translateY(-10px)}
+  100%  {opacity: 1; transform: translateY(0)}
+}
+
+.show-more-summary{
+  font-weight: 400;
+    white-space: nowrap;
+    background: #282828;
+    width: max-content;
+    padding: 5px 5px;
+}
 .resume-show-more{
   overflow: hidden;
   max-height: 22px;
