@@ -148,12 +148,16 @@ div.text-container {
   line-height: 17px;
   font-size: 14px;
   height: 34px;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .showContent {
   line-height: 17px;
   font-size: 14px;
   height: auto;
+  text-align: justify;
+  hyphens: auto;
 }
 
 .showContent{
@@ -174,6 +178,7 @@ div.text-container {
 }
 
 .paperImg:hover {opacity: 0.7;}
+
 
 /* The Modal (background) */
 .modal {
@@ -918,9 +923,9 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Services
+# publications
 --------------------------------------------------------------*/
-.services .icon-box {
+.publications .icon-box {
     border-radius: 10px;
     text-align: left;
     padding: 20px 20px 20px 20px;
@@ -928,7 +933,7 @@ section {
     background: #282828;
     box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
 }
-.services .icon-box .icon {
+.publications .icon-box .icon {
   margin: 0 auto;
   width: 100px;
   height: 100px;
@@ -938,90 +943,90 @@ section {
   transition: ease-in-out 0.3s;
   position: relative;
 }
-.services .icon-box .icon i {
+.publications .icon-box .icon i {
   font-size: 36px;
   transition: 0.5s;
   position: relative;
 }
-.services .icon-box .icon svg {
+.publications .icon-box .icon svg {
   position: absolute;
   top: 0;
   left: 0;
 }
-.services .icon-box .icon svg path {
+.publications .icon-box .icon svg path {
   transition: 0.5s;
   fill: #f5f5f5;
 }
-.services .icon-box h4 {
+.publications .icon-box h4 {
   font-weight: 600;
   margin: 10px 0 15px 0;
   font-size: 22px;
 }
-.services .icon-box h4 a {
+.publications .icon-box h4 a {
   color: #45505b;
   transition: ease-in-out 0.3s;
 }
-.services .icon-box p {
+.publications .icon-box p {
   line-height: 18px;
   font-size: 15px;
   margin-bottom: 0;
 }
-.services .icon-box:hover {
+.publications .icon-box:hover {
   border-color: #fff;
   box-shadow: 0px 0 35px 0 rgba(0, 0, 0, 0.08);
 }
-.services .iconbox-blue i {
+.publications .iconbox-blue i {
   color: #00615c;
 }
-.services .iconbox-blue:hover .icon i {
+.publications .iconbox-blue:hover .icon i {
   color: #fff;
 }
-.services .iconbox-blue:hover .icon path {
+.publications .iconbox-blue:hover .icon path {
   fill: #00615c;
 }
-.services .iconbox-orange i {
+.publications .iconbox-orange i {
   color: #ffa76e;
 }
-.services .iconbox-orange:hover .icon i {
+.publications .iconbox-orange:hover .icon i {
   color: #fff;
 }
-.services .iconbox-orange:hover .icon path {
+.publications .iconbox-orange:hover .icon path {
   fill: #ffa76e;
 }
-.services .iconbox-pink i {
+.publications .iconbox-pink i {
   color: #e80368;
 }
-.services .iconbox-pink:hover .icon i {
+.publications .iconbox-pink:hover .icon i {
   color: #fff;
 }
-.services .iconbox-pink:hover .icon path {
+.publications .iconbox-pink:hover .icon path {
   fill: #e80368;
 }
-.services .iconbox-yellow i {
+.publications .iconbox-yellow i {
   color: #ffbb2c;
 }
-.services .iconbox-yellow:hover .icon i {
+.publications .iconbox-yellow:hover .icon i {
   color: #fff;
 }
-.services .iconbox-yellow:hover .icon path {
+.publications .iconbox-yellow:hover .icon path {
   fill: #ffbb2c;
 }
-.services .iconbox-red i {
+.publications .iconbox-red i {
   color: #ff5828;
 }
-.services .iconbox-red:hover .icon i {
+.publications .iconbox-red:hover .icon i {
   color: #fff;
 }
-.services .iconbox-red:hover .icon path {
+.publications .iconbox-red:hover .icon path {
   fill: #ff5828;
 }
-.services .iconbox-teal i {
+.publications .iconbox-teal i {
   color: #11dbcf;
 }
-.services .iconbox-teal:hover .icon i {
+.publications .iconbox-teal:hover .icon i {
   color: #fff;
 }
-.services .iconbox-teal:hover .icon path {
+.publications .iconbox-teal:hover .icon path {
   fill: #11dbcf;
 }
 
