@@ -1,4 +1,5 @@
 /**
+* BASED ON:
 * Template Name: MyResume - v4.7.0
 * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
 * Author: BootstrapMade.com
@@ -11,6 +12,10 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #272829;
+}
+
+.color-text {
+  color: #00615c;
 }
 
 a {
